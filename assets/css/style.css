@@ -3,6 +3,9 @@ h4, h5, h6 {
   margin: 0;
   padding: 0;
   font-family: "Futura PT";
+}
+
+h1 {
   display: inline;
 }
 
@@ -91,6 +94,7 @@ h4, h5, h6 {
 
 .level {
   padding-top: 120px;
+  padding-bottom: 180px;
 }
 
 .level .section_title {
