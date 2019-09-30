@@ -371,6 +371,52 @@ h1 {
 /* cost */
 
 /* discounts */
+.discounts {
+  position: relative;
+  margin: 40px 0;
+}
+
+.discounts:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 490px;
+  height: 490px;
+  border-radius: 50%;
+  background-color: #ededed;
+  opacity: 0.33;
+  top: 0;
+  left: 37%;
+  z-index: -1;
+}
+
+.discounts .container {
+  height: 490px;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+  padding: 20px 0; 
+}
+
+.discounts_container {
+  border-radius: 5px;
+  background-color: #fff4ce;
+  padding: 45px 0;
+}
+
+.discounts_container h1 {
+  font-weight: 300;
+}
+
+.discounts_container h3 {
+  font-weight: 500;
+}
+
+.discounts_container + .btn-primary {
+  margin-top: -20px;
+}
 
 /* afterparty */
 .afterparty {
