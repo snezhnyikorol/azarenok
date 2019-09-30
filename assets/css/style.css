@@ -155,13 +155,30 @@ h1 {
 
 /* wherefore */
 
+.wherefore {
+  padding: 100px 0;
+}
+
 .wherefore .container {
   max-width: 1000px;
 }
 
 .wherefore_item {
-  padding: 0 50px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px;
   text-align: center;
+  justify-content: flex-end;
+  margin-top: 90px;
+}
+
+.wherefore_item p {
+  font-size: 24px;
+}
+
+.wherefore_item img {
+  align-self: center;
+  margin-bottom: 35px;
 }
 
 
