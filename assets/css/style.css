@@ -215,6 +215,10 @@ h1 {
 
 /* why */
 
+.why {
+  margin-bottom: 150px;
+}
+
 .why .container {
   background-color: #fbe872;
   padding: 60px 0 100px 0!important;
@@ -332,5 +336,26 @@ h1 {
 /* partners */
 
 /* q_form */
+
+.q_form {
+  background: #f8f8f8;
+  padding: 80px 0 110px 0;
+}
+
+.q_form input {
+  background-color: #eaeaea;
+  border-radius: 5px;
+  border: none;
+  padding: 25px 0 25px 25px;
+  width: 100%;
+}
+
+.q_form form {
+  margin-top: 60px;
+}
+
+.q_form .btn {
+  display: block;
+}
 
 /* contacts */
