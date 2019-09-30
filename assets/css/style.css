@@ -47,8 +47,9 @@ h4, h5, h6 {
 }
 
 .list_item img {
-  align-self: center;
-  margin-right: 25px;
+  align-self: flex-start;
+  margin-right: 20px;
+  margin-top: 11px;
 }
 
 /* main */
@@ -158,3 +159,34 @@ h4, h5, h6 {
 
 
 /* what */
+
+/* author */
+
+/* cost */
+
+/* discounts */
+
+/* afterparty */
+.afterparty {
+  padding: 85px 0;
+}
+
+.afterparty .container {
+  max-width: 1400px;
+}
+
+.afterparty h4 {
+  font-weight: 400;
+  margin-top: 60px;
+  margin-bottom: 47px;
+}
+
+.afterparty_container .btn-primary {
+  margin-top: -40px;
+}
+
+/* partners */
+
+/* q_form */
+
+/* contacts */
