@@ -272,6 +272,61 @@ h1 {
 
 /* what */
 
+@media screen and (min-width: 1500px) {
+  .what .container {
+    max-width: 1300px;
+  }
+}
+
+.what {
+  padding-top: 150px;
+  padding-bottom: 195px;
+}
+
+.what_wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+
+.what_item {
+  width: 22%;
+  min-width: 200px;
+  padding: 60px 30px 45px;
+  background-color: #f8e67d;
+  margin: 45px 15px;
+  text-align: center;
+  color: #000000;
+  font-size: 22px;
+  font-weight: 500;
+  position: relative;
+}
+
+.what_afterword {
+  opacity: 0.64;
+  color: #000000;
+  font-weight: 400;
+  margin-top: 80px;
+  margin-bottom: 45px;
+}
+
+.what_subtitle {
+  opacity: 0.53;
+  color: #010101;
+  font-size: 28px;
+  margin-top: 40px;
+  margin-bottom: 55px;
+}
+
+.what_img {
+  position: absolute;
+  width: 33%;
+  top: -50px;
+  left: 33%;
+}
+
 /* author */
 .author {
   padding: 61px 0;
@@ -366,6 +421,21 @@ h1 {
   border: none;
   padding: 25px 0 25px 25px;
   width: 100%;
+  color: #303030;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.q_form input::placeholder {
+  color: #696969;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.q_form input:focus {
+  border-radius: 5px;
+  border: 2px solid #696969;
+  outline: none;
 }
 
 .q_form form {
@@ -389,7 +459,7 @@ h1 {
 /* contacts */
 
 .contacts {
-  padding-top: 250px;
+  padding-top: 140px;
 }
 
 .contacts .title_wrapper {
