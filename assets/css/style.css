@@ -1,4 +1,5 @@
-* {
+p, h1, h2, h3,
+h4, h5, h6 {
   margin: 0;
   padding: 0;
   font-family: "Futura PT";
@@ -16,9 +17,65 @@
   margin: 0 80px;
 }
 
+.btn-primary {
+  border-radius: 5px;
+  background-image: linear-gradient(to top, #f5db43 0%, #fceb85 100%);
+  color: #131313;
+  padding: 20px 50px;
+  font-size: 20px;
+  border: none;
+  font-weight: 500;
+}
+
+.btn-primary:active, .btn-primary:hover {
+  border: none;
+  color: #131313!important;
+} 
+
+.list_item {
+  display: flex;
+  flex-direction: row;
+}
+
+.list_item p {
+  font-size: 22px;
+}
+
+.list_item img {
+  align-self: center;
+  margin-right: 25px;
+}
+
 /* main */
 
+.main {
+  padding-top: 55px;
+}
 
+.main_date {
+  margin-top: 35px;
+}
+
+.main_date, .main_name,
+.main_subtitle {
+  font-weight: 400;
+}
+
+.main_title {
+  margin-top: 90px;
+  font-size: 56px;
+  font-weight: 800;
+}
+
+.main_subtitle {
+  font-size: 47px;
+  margin-top: 40px;
+}
+
+.main_text {
+  margin-top: 45px;
+  margin-bottom: 85px;
+}
 
 /* level */
 
