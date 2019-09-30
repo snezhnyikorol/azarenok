@@ -35,10 +35,13 @@ h1 {
   font-weight: 500;
 }
 
-.btn-primary:active, .btn-primary:hover {
+.btn-primary:active, .btn-primary:hover, 
+.btn-primary:focus {
   border: none;
   color: #131313!important;
+  box-shadow: none!important;
 } 
+
 
 .underlined {
   background-image: linear-gradient(#ffffff00 60%, #f7e789 0); 
@@ -97,7 +100,7 @@ h1 {
   padding-bottom: 180px;
 }
 
-.level .section_title {
+.level .title_wrapper {
   margin-bottom: 140px;
 }
 
@@ -152,6 +155,14 @@ h1 {
 
 /* wherefore */
 
+.wherefore .container {
+  max-width: 1000px;
+}
+
+.wherefore_item {
+  padding: 0 50px;
+  text-align: center;
+}
 
 
 /* quote */
