@@ -3,6 +3,7 @@ h4, h5, h6 {
   margin: 0;
   padding: 0;
   font-family: "Futura PT";
+  display: inline;
 }
 
 .section_title {
@@ -31,6 +32,10 @@ h4, h5, h6 {
   border: none;
   color: #131313!important;
 } 
+
+.underlined {
+  background-image: linear-gradient(#ffffff00 60%, #f7e789 0); 
+}
 
 .list_item {
   display: flex;
@@ -79,8 +84,61 @@ h4, h5, h6 {
 
 /* level */
 
+.level {
+  padding-top: 120px;
+}
+
+.level .section_title {
+  margin-bottom: 140px;
+}
+
+.level .section_title span {
+  background-color: #f7e789;
+  padding: 0 20px;
+}
+
 .level_item {
   text-align: center;
+}
+
+.level_item p {
+  font-size: 26px;
+  color: #202020;
+  font-weight: 400;
+}
+
+.level_item-subtitle {
+  margin-bottom: 32px;
+}
+
+.level_item-title {
+  font-size: 38px;
+  margin-bottom: 35px;
+}
+
+.level_highlighted {
+  background-color: #f7f7f7;
+  padding: 60px 60px 30px 60px;
+  margin-top: 80px;
+  position: relative;
+}
+
+.level_highlighted::after {
+  position: absolute;
+  top: -20px;
+  left: 280px;
+  background-color: #ffffff;
+  display: block;
+  content: '';
+  width: 80px;
+  height: 40px;
+  border-radius: 100%;
+}
+
+@media screen and (min-width: 1500px) {
+  .level>.container {
+    max-width: 1300px!important;
+  }
 }
 
 /* wherefore */
