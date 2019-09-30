@@ -262,7 +262,46 @@ h1 {
 /* what */
 
 /* author */
+.author {
+  padding: 61px 0;
+}
 
+.author .container {
+  max-width: 1380px;
+}
+
+.author_name {
+  margin-top: 50px;
+}
+
+.author_name span {
+  color: #f5db43;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+.author_pluces-container {
+  padding-left: 25px;
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+.author_pluces-container p {
+  margin-left: -25px;
+}
+
+.author_pluces-container li {
+  color: #25a36f;
+}
+
+.author_pluces-container li > span {
+  color: #343434;
+  font-size: 22px;
+  font-weight: 400;
+} 
 /* cost */
 
 /* discounts */
