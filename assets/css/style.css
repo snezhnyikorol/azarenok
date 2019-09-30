@@ -341,6 +341,17 @@ h1 {
 }
 
 /* partners */
+.partners {
+  padding: 120px;
+}
+
+.partners .container {
+  max-width: 1040px;
+}
+
+.partners .title_wrapper {
+  margin-bottom: 50px;
+}
 
 /* q_form */
 
