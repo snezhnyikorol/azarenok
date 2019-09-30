@@ -65,11 +65,16 @@ h1 {
 /* main */
 
 .main {
-  padding-top: 55px;
+  padding-top: 90px;
 }
 
-.main_date {
-  margin-top: 35px;
+.main .btn {
+  margin-bottom: 180px;
+}
+
+.main_img {
+  position: absolute;
+  bottom: 0px;
 }
 
 .main_date, .main_name,
@@ -77,8 +82,11 @@ h1 {
   font-weight: 400;
 }
 
-.main_title {
+.main_title-wrapper {
   margin-top: 90px;
+}
+
+.main_title {
   font-size: 56px;
   font-weight: 800;
 }
@@ -184,11 +192,46 @@ h1 {
 
 /* quote */
 
+.quote {
+  padding: 150px 0px;
+}
 
+.quote p {
+  color: #000000;
+  font-size: 31px;
+  font-weight: 300;
+  position: relative;
+}
+
+.quote p span {
+  font-weight: 500;
+}
+
+.quote img {
+  position: absolute;
+  top: 0px;
+  left: -60px;
+}
 
 /* why */
 
+.why .container {
+  background-color: #fbe872;
+  padding: 60px 0 100px 0!important;
+  box-shadow: 0 31px 0px -18px #b7a84e;
+}
 
+.why .title_wrapper {
+  margin-bottom: 70px;
+}
+
+.why_container {
+  padding-left: 79px;
+}
+
+.why p {
+  font-size: 24px;
+}
 
 /* who */
 .who {
