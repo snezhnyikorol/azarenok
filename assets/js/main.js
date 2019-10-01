@@ -159,3 +159,22 @@ function checkMap() {
   }
 }
 
+$("input[name='phone']").mask("+375 (99) 999-99-99");
+
+$('#submit').click((e) => {
+  $('#form').submit()
+  e.preventDefault()
+})
+
+$('#modalSubmit').click((e) => {
+  $('#modalForm').submit()
+  e.preventDefault()
+})
+
+$('#book').on('show.bs.modal', function() {
+    $('html').addClass('noscroll');
+})
+
+$('#book').on('hide.bs.modal', function() {
+    $('html').removeClass('noscroll');
+})

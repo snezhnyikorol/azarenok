@@ -13,9 +13,20 @@ body {
   padding-top: 100px;
 }
 
-a, a:hover, a:active, a:visited {
+.noscroll {
+  overflow-y: hidden;
+}
+
+a, a:active, a:visited {
   text-decoration: none;
   color: #000000;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #000000;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(60%, #ffffff00), color-stop(0, #f7e789));
+  background-image: linear-gradient(#ffffff00 60%, #f7e789 0); 
 }
 
 h1 {
@@ -133,6 +144,13 @@ h1 {
   position: relative;
   z-index: 10;
   overflow: hidden;
+
+}
+
+.btn-primary:hover {
+  /* background-image: linear-gradient(to top, #cfb93c 0%, #e9d87a 100%); */
+  background-image: linear-gradient(to top, #f6e583 0%, #f8edae 100%);
+  color: #131313;
 }
 
 .btn-primary:before {
@@ -213,7 +231,7 @@ h1 {
 }
 
 
-.btn-primary:active, .btn-primary:hover, 
+.btn-primary:active, 
 .btn-primary:focus {
   border: none;
   color: #131313!important;
@@ -1031,6 +1049,16 @@ header .container {
   padding-top: 140px;
 }
 
+.contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts .link {
+  display: inline-block;
+  align-self: flex-start;
+}
+
 .contacts .col-lg-5 {
   z-index: 2;
   position: relative;
@@ -1044,8 +1072,11 @@ header .container {
   font-size: 26px;
   font-weight: 400;
   color: #000000;
-  display: block;
   line-height: 1.3;
+}
+
+.contacts h3 {
+  display: block;
 }
 
 .contacts .link:hover, .contacts .link:focus, .contacts .link:active {
@@ -1212,8 +1243,37 @@ footer {
 	}
   }
 
+.modal_input {
+  background-color: #d9d9d9;
+  border-radius: 5px;
+  border: 2px solid rgba(0,0,0,0);
+  padding: 20px 0 20px 25px;
+  width: 100%;
+  color: #303030;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 15px 0;
+}
 
+.modal_input::placeholder {
+  color: #696969;
+  font-size: 18px;
+  font-weight: 500;
+}
 
+.modal_input:focus {
+  border-radius: 5px;
+  border: 2px solid #696969;
+  outline: none;
+}
+
+.modal-content {
+  background-color: #f0f0f0;
+}
+
+.modal-header {
+  border-bottom: none;
+}
 
 
 @media screen and (max-width: 1500px) {

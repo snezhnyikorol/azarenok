@@ -67,7 +67,7 @@
                                         <img src="./assets/img/icons/check.png" alt="">
                                         <p>Превращаем ваше ФИО в деньги</p>
                                     </div>
-                                    <a href="" class="btn btn-primary">Активировать личный бренд</a>
+                                    <a href="" class="btn btn-primary" data-toggle="modal" data-target="#book">Активировать личный бренд</a>
                                 </div>
                                 <img class="main_img img-fluid" src="./assets/img/main/photo.png" alt="">
                             </div>
@@ -332,7 +332,7 @@
                 </div>
                 <h4 class="what_afterword text-center">У вас появится больше времени на себя, семью и удовольствия.<br>
                         Причём вы сможете позволить себе совершенно иной уровень этих удовольствий.</h4>
-                <a href="" class="btn btn-primary">Активировать личный бренд</a>
+                <a href="" class="btn btn-primary" data-toggle="modal" data-target="#book">Активировать личный бренд</a>
             </div>
         </section>
 
@@ -432,10 +432,10 @@
                         </tr>
                         <tr>
                             <th scope="row"></th>
-                            <td><a href="" class="btn btn-primary">Купить</a></td>
-                            <td><a href="" class="btn btn-primary">Купить</a></td>
-                            <td><a href="" class="btn btn-primary">Купить</a></td>
-                            <td><a href="" class="btn btn-primary">Купить</a></td>
+                            <td><a href="" class="btn btn-primary" data-toggle="modal" data-target="#book">Купить</a></td>
+                            <td><a href="" class="btn btn-primary" data-toggle="modal" data-target="#book">Купить</a></td>
+                            <td><a href="" class="btn btn-primary" data-toggle="modal" data-target="#book">Купить</a></td>
+                            <td><a href="" class="btn btn-primary" data-toggle="modal" data-target="#book">Купить</a></td>
                         </tr>
                     </tbody>
                 </table>
@@ -454,7 +454,7 @@
                             <p class="enabled">Презентации спикеров</p>
                         </div>
                         <p class="cost_price">6&nbsp;900&nbsp;руб.</p>
-                        <a href="" class="btn btn-primary">Купить</a>
+                        <a href="" class="btn btn-primary" data-toggle="modal" data-target="#book">Купить</a>
                     </div>
                     <div class="cost_mobile-item">
                         <h2>Офлайн
@@ -469,7 +469,7 @@
                             <p class="disabled">Презентации спикеров</p>
                         </div>
                         <p class="cost_price">6&nbsp;900&nbsp;руб.</p>
-                        <a href="" class="btn btn-primary">Купить</a>
+                        <a href="" class="btn btn-primary" data-toggle="modal" data-target="#book">Купить</a>
                     </div>
                     <div class="cost_mobile-item">
                         <h2>Офлайн
@@ -484,7 +484,7 @@
                             <p class="enabled">Презентации спикеров</p>
                         </div>
                         <p class="cost_price">6&nbsp;900&nbsp;руб.</p>
-                        <a href="" class="btn btn-primary">Купить</a>
+                        <a href="" class="btn btn-primary" data-toggle="modal" data-target="#book">Купить</a>
                     </div>
                     <div class="cost_mobile-item">
                         <h2>Офлайн
@@ -499,7 +499,7 @@
                             <p class="disabled">Презентации спикеров</p>
                         </div>
                         <p class="cost_price">6&nbsp;900&nbsp;руб.</p>
-                        <a href="" class="btn btn-primary">Купить</a>
+                        <a href="" class="btn btn-primary" data-toggle="modal" data-target="#book">Купить</a>
                     </div>
                 </div>
 
@@ -517,21 +517,21 @@
                             <h1>10%</h1>
                             <h3>2 человека</h3>
                         </div>     
-                        <a class="btn btn-primary" href="">Заказать</a>               
+                        <a class="btn btn-primary" href="" data-toggle="modal" data-target="#book">Заказать</a>               
                     </div>
                     <div class="col-lg-4 text-center">
                         <div class="discounts_container">
                             <h1>10%</h1>
                             <h3>2 человека</h3>
                         </div>     
-                        <a class="btn btn-primary" href="">Заказать</a>  
+                        <a class="btn btn-primary" href="" data-toggle="modal" data-target="#book">Заказать</a>  
                     </div>
                     <div class="col-lg-4 text-center">
                         <div class="discounts_container">
                             <h1>10%</h1>
                             <h3>2 человека</h3>
                         </div>     
-                        <a class="btn btn-primary" href="">Заказать</a>  
+                        <a class="btn btn-primary" href="" data-toggle="modal" data-target="#book">Заказать</a>  
                     </div>
                 </div>
                 <h6 class="text-center discounts_afterword mt-4">* Скидки не суммируются. Если у вас есть промокод, сообщите о нем менеджеру</h6>
@@ -584,7 +584,7 @@
                                 <div class="col-lg-4 d-flex align-items-center justify-content-center">
                                     <div class="afterparty_container text-center">
                                         <img class="img-fluid" src="assets/img/party.jpg">
-                                        <a class="btn btn-primary" href="">Попасть на вечеринку</a>
+                                        <a class="btn btn-primary" href="" data-toggle="modal" data-target="#book">Попасть на вечеринку</a>
                                     </div>
                                 </div>
                             </div>
@@ -621,18 +621,18 @@
             <div class="container">
                 <h2 class="text-center">Остались вопросы?</h2>
                 <h2 class="text-center">Свяжитесь с организаторами</h2>
-                <form class="row">
+                <form id="form" class="row">
                     <div class="col-lg-3 my-3 my-lg-0">
-                        <input type="" name="" placeholder="Имя">
+                        <input type="" name="name" placeholder="Имя">
                     </div>
                     <div class="col-lg-3 my-3 my-lg-0">
-                        <input type="" name="" placeholder="Телефон">
+                        <input type="" name="phone" placeholder="+375 (__) ___-__-__">
                     </div>
                     <div class="col-lg-3 my-3 my-lg-0">
-                        <input type="" name="" placeholder="Почта">
+                        <input type="" name="main" placeholder="Почта">
                     </div>
                     <div class="col-lg-3 my-3 my-lg-0 d-lg-flex align-items-lg-center">
-                        <a href="" class="btn btn-primary">Связаться</a>
+                        <a id="submit" href="" class="btn btn-primary">Связаться</a>
                     </div>
                 </form>
                 <div class="row">
@@ -656,7 +656,9 @@
 
                 <div class="row">
                     <div class="col-lg-5">
-                        <a class="link d-flex flex-column align-items-left mb-5" href=""><h3 class="mr-2">Адрес:</h3>VOKA Cinema by Silver Screen, ТЦ Dana Mall</a>
+                        <!-- <a class="link d-flex flex-column align-items-left mb-5" href=""> -->
+                            <h3 class="mr-2 mb-5">Адрес: VOKA Cinema by Silver Screen, ТЦ Dana Mall</h3>
+                        <!-- </a> -->
                         <h3>Дата и время проведения:</h3>
                         <h3>10 октября, 10:00</h3>
                         <div class="numbers mt-5">
@@ -698,7 +700,28 @@
 				</div>
 			</div>
         </footer>
+
+            <div class="modal fade" id="book" tabindex="-1" role="dialog" aria-labelledby="bookTicket" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="bookTicket">Забронировать билет</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form id="modalForm" class="text-center" action="">
+                                <input name="name" class="modal_input" type="text" placeholder="Имя">
+                                <input name="phone" class="modal_input" type="text" placeholder="+375 (__) ___-__-__">
+                                <a id="modalSubmit" href="" class="btn btn-primary mt-4">Забронировать</a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>        
         
+        <script src="./vendor/mask/jquery.maskedinput.min.js"></script>
         <script src="./assets/js/main.js"></script>
     </body>
 </html>
