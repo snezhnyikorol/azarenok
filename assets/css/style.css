@@ -479,7 +479,7 @@ header .container {
 .table th, .table td {
   text-align: center;
   padding: 25px 20px;
-  vertical-align: middle;
+  vertical-align: middle!important;
 }
 
 .table-striped tbody tr:last-child {
@@ -654,8 +654,21 @@ header .container {
   text-decoration: none;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 1200px) {
   .table th, .table td {
-    padding: 5px 0px;
+    padding: 10px 5px;
   }
+
+  .cost .container {
+    width: 95%;
+  }
+
+  .table_cost {
+    font-size: 24px;
+  }
+
+  .cost .btn {
+    padding: 10px 30px;
+  }
+  
 }
