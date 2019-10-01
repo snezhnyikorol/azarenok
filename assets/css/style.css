@@ -957,6 +957,14 @@ footer {
     justify-content: center;
   }
 
+  .who_item {
+    margin-left: 0;
+  }
+
+  .who_item .list_item {
+    margin-left: 0;
+  }
+
 	.center-footer-block h2 {
 		font-size: 25px;
   }
@@ -1001,6 +1009,10 @@ footer {
 }
 
 @media (max-width: 576px){
+
+  .section_title {
+    font-size: 30px;
+  }
 
   .bg-gray {
     margin: 0 15px;
@@ -1069,7 +1081,7 @@ footer {
 
 @media (max-width: 360px){
   .why_container {
-    padding: 0 20px;
+    padding: 0 30px;
   }
 
   .phone {
