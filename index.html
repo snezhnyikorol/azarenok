@@ -29,13 +29,34 @@
                             <div class="burger-3"></div>
                         </div>
                     </div>  
-                </div>
-
-                <nav>
-               
-                </nav>              
+                </div>            
             </div>
         </header>
+
+        <nav class="map_wrapper row">
+            <div class="substrate col-xl-8 col-lg-7 col-sm-6"></div>
+            <div class="map col-xl-4 col-lg-5 col-sm-6">
+                <div class="col-xl-8 col-11 flex-column d-flex align-items-end">
+                    <div class="row align-items-center">
+                        <!-- <h2 class="map_title">Карта сайта</h2> -->
+                        <div class="map_close"></div>
+                    </div>	
+                    <div class="map_container flex-column d-flex align-items-end justify-content-between">
+                        <a href="#wherefore" class="map_item">Для чего нужен личный бренд?</a>
+                        <a href="#why" class="map_item">Почему "Инструкция по активации"?</a>
+                        <a href="#who" class="map_item">Кому это нужно?</a>
+                        <a href="#what" class="map_item">Что вы получите после тренинга?</a>
+                        <a href="#author" class="map_item">Кто автор тренинга?</a>
+                        <a href="#cost" class="map_item">Стоимость билетов</a>
+                        <a href="#discount" class="map_item">Коллективные скидки</a>
+                        <a href="#afterparty" class="map_item">Afterparty</a>
+                        <a href="#partners" class="map_item">Партнеры</a>
+                        <a href="#q_form" class="map_item">Обратная связь</a>
+                        <a href="#contacts" class="map_item">Место проведения</a>
+                    </div>			
+                </div>
+            </div>
+        </nav>
 
         <section class="main bg-gray">
             <div class="container">
@@ -99,7 +120,7 @@
             </div>
         </section>
 
-        <section class="wherefore bg-gray">
+        <section id="wherefore" class="wherefore bg-gray">
             <div class="container">
                 <div class="title_wrapper">
                     <h1 class="section_title underlined">Для чего нужен личный бренд?</h1>
@@ -152,7 +173,7 @@
             </div>
         </section>
 
-        <section class="why">
+        <section class="why" id="why">
             <div class="container">
                 <div class="row">
                         <div class="col-12 title_wrapper">
@@ -170,7 +191,7 @@
             </div>
         </section>
 
-        <section class="who bg-gray">
+        <section class="who bg-gray" id="who">
             <div class="container">
                 <div class="title_wrapper">
                     <h1 class="section_title underlined">Кому это нужно?</h1>
@@ -253,7 +274,7 @@
             </div>
         </section>
 
-        <section class="what">
+        <section class="what" id="what">
             <div class="container text-center">
                 <div class="title_wrapper">
                     <h1 class="section_title underlined">Что вы получите после тренинга?</h1>
@@ -308,6 +329,11 @@
                 <a href="" class="btn btn-primary">Активировать личный бренд</a>
             </div>
         </section>
+
+        <div class="title_wrapper author_title" id="author">
+            <h1 class="section_title underlined">Кто автор тренинга?</h1>            
+        </div>
+
         
         <section class="author bg-gray">
             <div class="container">
@@ -344,7 +370,7 @@
             </div>
         </section>
     
-        <section class="cost">
+        <section class="cost" id="cost">
             <div class="container">
                 <div class="title_wrapper">
                     <h1 class="section_title underlined">Стоимость билетов</h1>
@@ -468,7 +494,7 @@
             </div>
         </section>
         
-        <section class="discounts bg_circle"> 
+        <section class="discounts bg_circle" id="discount"> 
             <div class="container">
                 <div class="title_wrapper">
                     <h1 class="section_title">Коллективные скидки</h1>
@@ -500,7 +526,7 @@
             </div>
         </section>
 
-        <section class="afterparty bg-gray">
+        <section class="afterparty bg-gray" id="afterparty">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8">
@@ -552,7 +578,7 @@
             </div>
         </section>
 
-        <section class="partners">
+        <section class="partners" id="partners">
             <div class="container">
                 <div class="title_wrapper">
                     <h1 class="section_title underlined">Партнеры</h1>
@@ -574,7 +600,7 @@
             </div>
         </section>
         
-        <section class="q_form">
+        <section class="q_form" id="q_form">
             <div class="container">
                 <h2 class="text-center">Остались вопросы?</h2>
                 <h2 class="text-center">Свяжитесь с организаторами</h2>
@@ -605,7 +631,7 @@
             </div>
         </section>
 
-        <section class="contacts"> 
+        <section class="contacts" id="contacts"> 
             <div class="container">
                 <div class="title_wrapper">
                     <h1 class="section_title underlined">Место проведения</h1>
@@ -650,6 +676,8 @@
 					</div>
 				</div>
 			</div>
-		</footer>
+        </footer>
+        
+        <script src="./assets/js/main.js"></script>
     </body>
 </html>
