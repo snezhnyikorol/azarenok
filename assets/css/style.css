@@ -1014,6 +1014,11 @@ footer {
     font-size: 30px;
   }
 
+  header .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
   .bg-gray {
     margin: 0 15px;
   }
@@ -1031,6 +1036,11 @@ footer {
     margin-top: 50px;
     margin-bottom: 35px;
   }
+
+  .author_name {
+    flex-direction: column;
+  }
+
   .author_pluces-container {
     font-size: 20px;
   }
