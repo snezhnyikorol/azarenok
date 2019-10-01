@@ -75,7 +75,7 @@ h1 {
 }
 
 header .container {
-  padding: 50px 0;
+  padding: 50px 15px 50px 15px;
 }
 
 @media screen and (min-width: 1600px) {
@@ -1014,11 +1014,6 @@ footer {
     font-size: 30px;
   }
 
-  header .container {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
   .bg-gray {
     margin: 0 15px;
   }
@@ -1089,9 +1084,18 @@ footer {
   }
 }
 
-@media (max-width: 360px){
+@media (max-width: 376px){
+  .cost_mobile-item {
+    width: 95%;
+  }
+
   .why_container {
     padding: 0 30px;
+  }
+
+  .bg-gray {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .phone {
