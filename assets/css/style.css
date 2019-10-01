@@ -913,7 +913,7 @@ footer {
     font-size: 33px;
   }
 
-  .list_item p, .what_item {
+  .list_item p, .what_item, .table th {
     font-size: 20px;
   }
 
@@ -925,7 +925,7 @@ footer {
     font-size: 22px;
   }
 
-  .what_subtitle, .who_afterword {
+  .what_subtitle, .who_afterword, .table td {
     font-size: 24px;
   }
 
