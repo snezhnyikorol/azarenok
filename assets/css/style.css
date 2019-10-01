@@ -752,5 +752,21 @@ header .container {
   .contacts {
     padding-top: 100px;
   }
+}
 
+@media screen and (max-width: 992px) {
+  .author img {
+    max-width: 50%;
+  }
+
+  .discounts .container {
+    height: auto;
+  }
+
+  .discounts_container {
+    max-width: 310px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
 }
