@@ -166,6 +166,65 @@ header .container {
   padding: 50px 15px 50px 15px;
 }
 
+.map_wrapper {
+	min-height: 100vh;
+	position: fixed;
+	top: 0px;
+	right: -3000px;	
+	z-index: 1000;
+	width:100%;
+	/* transition: right 0.5s ease-in-out; */
+	margin-right: 0px;
+}
+
+.substrate {
+	min-height: 100vh;
+	background: #f7e789;
+	opacity: 0;
+}
+
+.map {
+	overflow-y: auto;
+	padding-top: 100px;
+	background-color: #fafafa;
+}
+
+.map_title {
+	margin-right: 15px;
+	opacity: 0.6;
+	color: #000000;
+	font-size: 18px;
+	font-style: italic;
+}
+
+.map .row {
+	margin-bottom: 30px;
+}
+
+.map_container {
+	height: 60vh;
+}
+
+.map_item {
+	text-align: right;
+	color: #000000;
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.map .btn {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	padding: 10px 34px;
+}
+
+.map_close {
+	content: url(../img/icons/exit.png);
+	width: 14px;
+	height: 14px;
+	cursor: pointer;
+}
+
 @media screen and (min-width: 1600px) {
   header .container {
     max-width: 1420px!important;
@@ -536,6 +595,10 @@ header .container {
 .author {
   padding-top: 61px;
   padding-bottom: 61px;
+}
+
+.author_title {
+  margin-bottom: 35px;
 }
 
 .author .container {
@@ -939,6 +1002,15 @@ footer {
 }
 
 @media screen and (max-width: 1200px) {
+
+  .map {
+		padding-top: 50px;
+	}
+
+	.map_item {
+		font-size: 16px;
+  }
+  
   .btn-primary {
     font-size: 18px;
     padding: 15px 30px;
@@ -1171,6 +1243,11 @@ footer {
 
 @media (max-width: 576px){
 
+	.substrate {
+		display: none;
+	}
+
+
   .main .btn {
     margin-bottom: 90px;
   }
@@ -1270,5 +1347,13 @@ footer {
   .phone {
     font-size: 16px;
   }
+
+  .map {
+		padding-top: 20px;
+	}
+	.map .btn {
+		margin-bottom: 15px;
+		margin-top: 15px;
+	}
 }
 
