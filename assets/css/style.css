@@ -976,7 +976,7 @@ footer {
     font-size: 33px;
   }
 
-  .list_item p, .what_item {
+  .list_item p, .what_item, .table th {
     font-size: 20px;
   }
 
@@ -984,11 +984,11 @@ footer {
     font-size: 29px;
   }
 
-  .why p {
+  .why p, .level_item p {
     font-size: 22px;
   }
 
-  .what_subtitle, .who_afterword, .level_item p {
+  .what_subtitle, .who_afterword, .table td {
     font-size: 24px;
   }
 
@@ -999,6 +999,7 @@ footer {
   .author_pluces-container li > span {
     font-size: 20px;
   }
+
 }
 
 @media screen and (max-width: 1200px) {
