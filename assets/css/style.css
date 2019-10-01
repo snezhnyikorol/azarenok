@@ -686,6 +686,11 @@ header .container {
 }
 
 @media screen and (max-width: 1200px) {
+  .btn-primary {
+    font-size: 18px;
+    padding: 15px 30px;
+  }
+
   .table th, .table td {
     padding: 10px 5px;
   }
@@ -701,5 +706,51 @@ header .container {
   .cost .btn {
     padding: 10px 30px;
   }
+
+  .bg-gray {
+    margin: 0 25px; 
+  }
+
+  .who {
+    padding: 30px;
+  }
+
+  .who_item {
+    margin-left: 35px;
+    padding: 16px 21px; 
+  }
+
+  .who_afterword {
+    margin-top: 30px;
+  }
+
+  .what {
+    padding: 80px 0;
+  }
+
+  .what_item {
+    padding: 40px 20px 30px;
+    margin: 30px 15px;
+  }
+
+  .author_name {
+    margin-top: 25px;
+  }
   
+  .author_pluces-container {
+    margin-top: 20px;
+  }
+
+  .partners {
+    padding: 90px;
+  }
+
+  .q_form {
+    padding: 60px 0 80px;
+  }
+
+  .contacts {
+    padding-top: 100px;
+  }
+
 }
