@@ -1010,6 +1010,10 @@ footer {
 
 @media (max-width: 576px){
 
+  .main .btn {
+    margin-bottom: 90px;
+  }
+
   .section_title {
     font-size: 30px;
   }
