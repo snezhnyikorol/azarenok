@@ -5,9 +5,12 @@ h4, h5, h6 {
 }
 
 body, html {
-  padding-top: 50px;
   overflow-x: hidden;
   font-family: "Futura PT";
+}
+
+body {
+  padding-top: 100px;
 }
 
 a, a:hover, a:active, a:visited {
@@ -28,12 +31,94 @@ h1 {
   color: #000000;
   font-size: 35px;
   font-weight: 500;
+  z-index: 2;
+  position: relative;
 }
 
 .bg-gray {
-  background-color: #f8f8f8;
+  height: 100%;
+  background-color: #f0f0f0;
   margin: 0 80px;
   padding: 0 30px;
+  position: relative!important;
+  z-index: 1;
+}
+
+#br_1 {
+  z-index: 0;
+  position: absolute;
+  top: -190px;
+  left: -90px;
+}
+
+#br_2 {
+  z-index: 0;
+  position: absolute;
+  bottom: -300px;
+  right: -70px;
+}
+
+#br_3 {
+  z-index: 0;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+}
+
+#br_4 {
+  z-index: 0;
+  position: absolute;
+  bottom: 74px;
+  right: -109px;
+}
+
+#br_5 {
+  z-index: 0;
+  position: absolute;
+  top: -90px;
+  left: -70px;
+}
+
+#br_6 {
+  z-index: 0;
+  position: absolute;
+  bottom: -100px;
+  right: -109px;
+}
+
+#br_7 {
+  z-index: 0;
+  position: absolute;
+  bottom: -120px;
+  left: -40px;
+}
+
+#br_8 {
+  z-index: 0;
+  position: absolute;
+  top: -90px;
+  right: -39px;
+}
+
+#br_9 {
+  z-index: 0;
+  position: absolute;
+  top: -120px;
+  left: -140px;
+}
+
+#br_10 {
+  z-index: 0;
+  position: absolute;
+  bottom: -80px;
+  right: -140px;
+}
+
+#br_11 {
+  z-index: 0;
+  position: absolute;
+  top: -170px;
+  left: -170px;
 }
 
 .btn-primary {
@@ -311,8 +396,12 @@ header .container {
 /* main */
 
 
+.main .bg-gray {
+  padding-top: 90px;  
+}
+
 .main {
-  padding-top: 90px;
+
   position: relative;
 }
 
@@ -325,12 +414,12 @@ header .container {
   bottom: 0px;
   right:  0%;
   width: 70%;
-  z-index: 0;
+  z-index: 2;
 }
 
 .main .col-lg-6 {
   position: relative;
-  z-index: 2;
+  z-index: 3;
 }
 
 @media screen and (min-width: 1500px) {
@@ -405,7 +494,7 @@ header .container {
 }
 
 .level_highlighted {
-  background-color: #f7f7f7;
+  background-color: #f0f0f0;
   padding: 60px 60px 30px 60px;
   margin-top: 80px;
   position: relative;
@@ -431,8 +520,13 @@ header .container {
 
 /* wherefore */
 
+.wherefore .bg-gray {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
 .wherefore {
-  padding: 100px 0;
+  position: relative;
 }
 
 .wherefore .container {
@@ -522,6 +616,10 @@ header .container {
 
 /* who */
 .who {
+  position: relative;
+}
+
+.who .bg-gray {
   padding: 60px;
 }
 
@@ -615,6 +713,10 @@ header .container {
 
 /* author */
 .author {
+  position: relative;
+}
+
+.author .bg-gray{
   padding-top: 61px;
   padding-bottom: 61px;
 }
@@ -757,6 +859,11 @@ header .container {
   margin: 120px 0;
 }
 
+.discounts_afterword {
+  position: relative;
+  z-index: 2;
+}
+
 .discounts:after {
   content: '';
   display: block;
@@ -808,6 +915,10 @@ header .container {
 
 /* afterparty */
 .afterparty {
+  position: relative;
+}
+
+.afterparty .bg-gray {
   padding-top: 85px;
   padding-bottom: 85px;
 }
@@ -846,12 +957,12 @@ header .container {
 /* q_form */
 
 .q_form {
-  background: #f8f8f8;
+  background: #f0f0f0;
   padding: 80px 0 110px 0;
 }
 
 .q_form input {
-  background-color: #eaeaea;
+  background-color: #d9d9d9;
   border-radius: 5px;
   border: 2px solid rgba(0,0,0,0);
   padding: 20px 0 20px 25px;
@@ -897,6 +1008,7 @@ header .container {
 
 .q_form .btn {
   display: block;
+  width: 100%;
 }
 
 .q_tel {
@@ -915,15 +1027,21 @@ header .container {
   padding-top: 140px;
 }
 
+.contacts .col-lg-5 {
+  z-index: 2;
+  position: relative;
+}
+
 .contacts .title_wrapper {
   margin-bottom: 70px;
 }
 
 .contacts .link, .contacts h3 {
-  font-size: 1.75rem;
+  font-size: 26px;
   font-weight: 400;
   color: #000000;
   display: block;
+  line-height: 1.3;
 }
 
 .contacts .link:hover, .contacts .link:focus, .contacts .link:active {
@@ -1002,7 +1120,7 @@ footer {
 	position: relative;
 	z-index: 0;
 	width: 100%;
-	height: 555px;
+	height: 390px;
 	cursor: pointer;
 	background-color: transparent;
   }
@@ -1169,7 +1287,7 @@ footer {
     margin: 0 25px; 
   }
 
-  .who {
+  .who .bg-gray {
     padding: 30px;
   }
 
@@ -1221,6 +1339,10 @@ footer {
     opacity: 0.5;
     height: 80%;
     width: auto;
+  }
+
+  #br_2 {
+    bottom: -150px;
   }
 
   .level .title_wrapper {
@@ -1306,15 +1428,6 @@ footer {
 
   .why_container {
     padding: 0 40px;
-  }
-
-  .who .col-md-6 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
 
   .who_item {
@@ -1463,7 +1576,8 @@ footer {
   }
 
   .discounts {
-    margin: 100px 0;
+    margin-top: 100px;
+    margin-bottom: 50px;
   }
 }
 
