@@ -650,8 +650,6 @@ header .container {
   text-decoration: none;
 }
 
-<<<<<<< HEAD
-=======
 @media screen and (max-width: 1500px) {
   /*fonts size*/
   html {
@@ -687,7 +685,6 @@ header .container {
   }
 }
 
->>>>>>> 611d8789681033c87da4b382d625bf3447a29eaf
 @media screen and (max-width: 1200px) {
   .table th, .table td {
     padding: 10px 5px;
