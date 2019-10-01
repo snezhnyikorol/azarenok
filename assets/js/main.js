@@ -173,8 +173,20 @@ $('#modalSubmit').click((e) => {
 
 $('#book').on('show.bs.modal', function() {
     $('html').addClass('noscroll');
+    // $('*:not(.modal)').css('filter', 'blur(1.3075px)')
+    // $('.page_wrapper').css({
+    //     '-webkit-filter': 'blur(2px)',
+    //     '-moz-filter': 'blur(2px)',
+    //     '-o-filter': 'blur(2px)',
+    //     '-ms-filter': 'blur(2px)',
+    //     'filter': 'blur(2px)'
+    // })
 })
 
 $('#book').on('hide.bs.modal', function() {
     $('html').removeClass('noscroll');
 })
+
+function hide () {
+  $('#book').modal('hide');
+}

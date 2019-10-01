@@ -132,6 +132,13 @@ h1 {
   left: -170px;
 }
 
+#br_12 {
+  z-index: 0;
+  position: absolute;
+  top: 60px;
+  left: 410px;
+}
+
 .btn-primary {
   border-radius: 5px;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#f5db43), to(#fceb85));
@@ -1665,4 +1672,11 @@ footer {
 		margin-bottom: 15px;
 		margin-top: 15px;
 	}
+}
+
+.modal-open section,
+.modal-open footer,
+.modal-open .menu_btn {
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
 }
