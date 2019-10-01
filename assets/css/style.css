@@ -70,15 +70,11 @@ h1 {
   margin-top: 11px;
 }
 
-header {
-}
-
 header .container {
   padding: 50px 0;
-  max-width: 1420px;
 }
 
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1600px) {
   header .container {
     max-width: 1420px!important;
   }
@@ -654,7 +650,42 @@ header .container {
   text-decoration: none;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 1500px) {
+  /*fonts size*/
+  html {
+    font-size: 14px;
+  }
+
+  .section_title {
+    font-size: 33px;
+  }
+
+  .list_item p, .what_item {
+    font-size: 20px;
+  }
+
+  .quote p {
+    font-size: 29px;
+  }
+
+  .why p {
+    font-size: 22px;
+  }
+
+  .what_subtitle, .who_afterword, .level_item p {
+    font-size: 24px;
+  }
+
+  .author_name span {
+    font-size: 16px;
+  }
+
+  .author_pluces-container li > span {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
   .table th, .table td {
     padding: 5px 0px;
   }
