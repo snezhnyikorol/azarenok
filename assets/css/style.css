@@ -70,11 +70,11 @@ h1 {
 }
 
 header {
-  height: 125px;
 }
 
 header .container {
-  padding-top: 50px;
+  padding: 50px 0;
+  max-width: 1420px;
 }
 
 .phone {
@@ -447,8 +447,6 @@ header .container {
   .cost .container {
     max-width: 1330px;
 }
-
-
 
 .table th {
   color: #000000;
