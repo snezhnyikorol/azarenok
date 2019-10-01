@@ -46,7 +46,86 @@ h1 {
   font-weight: 500;
   position: relative;
   z-index: 10;
+  overflow: hidden;
 }
+
+.btn-primary:before {
+  margin-left: 60px;
+  content: "";
+  width: 30px;
+  height: 300px;
+  background: #fff;
+  -webkit-animation-delay: 0.05s;
+          animation-delay: 0.05s;
+  position: absolute;
+  left: -40px;
+  top: -150px;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+  -webkit-animation-name: radiance;
+          animation-name: radiance;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  opacity: 0.9;
+}
+
+
+@-webkit-keyframes radiance { 
+  0% { 
+    opacity: 1;
+    left: -30px; 
+    margin-left: 0px; 
+  } 
+  30% { 
+    opacity: 1;
+    left: 110%; 
+    margin-left: 80px; 
+  } 
+
+  40% { 
+    opacity: 0;
+    left: 110%; 
+    margin-left: 80px; 
+  } 
+
+  100% { 
+    opacity: 0;
+    left: 110%; 
+    margin-left: 80px; 
+  } 
+}
+
+@keyframes radiance { 
+  0% { 
+    opacity: 1;
+    left: -30px; 
+    margin-left: 0px; 
+  } 
+  30% { 
+    opacity: 1;
+    left: 110%; 
+    margin-left: 80px; 
+  } 
+
+  40% { 
+    opacity: 0;
+    left: 110%; 
+    margin-left: 80px; 
+  } 
+
+  100% { 
+    opacity: 0;
+    left: 110%; 
+    margin-left: 80px; 
+  } 
+}
+
 
 .btn-primary:active, .btn-primary:hover, 
 .btn-primary:focus {
@@ -371,7 +450,7 @@ header .container {
   background-color: #ffffff;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: flex;
   margin: 12px 0;
   margin-left: 65px;
 }
