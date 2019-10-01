@@ -590,6 +590,10 @@ header .container {
   position: relative;
 }
 
+.why .row {
+  position: relative;
+}
+
 .why .container {
   background-color: #fbe872;
   padding: 60px 0 100px 0!important;
@@ -611,7 +615,7 @@ header .container {
 
 .why img {
   position: absolute;
-  right: 0px;
+  right: -116px;
 }
 
 /* who */
@@ -1249,7 +1253,6 @@ footer {
 }
 
 @media screen and (max-width: 1200px) {
-
   .menu_btn {
     right: 25px;
   }
@@ -1301,7 +1304,7 @@ footer {
   }
 
   .why img {
-    right: -6%;
+    right: -9%;
   }
 
   .what {
@@ -1350,7 +1353,7 @@ footer {
   }
 
   .why img {
-    right: -6%;
+    right: -9%;
     -webkit-transform: scale(0.67);
             transform: scale(0.67);
   }
