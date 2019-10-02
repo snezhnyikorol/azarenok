@@ -637,12 +637,16 @@ header ul li {
 /* quote */
 
 .quote {
-  padding: 150px 0px;
+  position: absolute;
+  background-color: #fbe872;
+  padding: 15px 20px 15px 40px;
+  bottom: 120px;
+  left: calc(50% - 200px);
 }
 
 .quote p {
   color: #000000;
-  font-size: 31px;
+  font-size: 20px;
   font-weight: 300;
   position: relative;
 }
@@ -653,8 +657,9 @@ header ul li {
 
 .quote img {
   position: absolute;
-  top: 0px;
-  left: -60px;
+  left: 10px;
+  top: 10px;
+  width: 30px;
 }
 
 /* why */
@@ -794,8 +799,8 @@ header ul li {
   position: relative;
 }
 
-.author .bg-gray{
-  padding-top: 61px;
+.author {
+  padding-top: 120px;
   padding-bottom: 61px;
 }
 
@@ -1347,7 +1352,7 @@ footer {
   }
 
   .quote p {
-    font-size: 29px;
+    font-size: 18px;
   }
 
   .why p, .level_item p {
@@ -1448,6 +1453,11 @@ footer {
     margin-top: 20px;
   }
 
+  .quote {
+    bottom: 20%;
+    left: calc(50% - 200px);
+  }
+
   .partners {
     padding: 90px;
   }
@@ -1499,6 +1509,11 @@ header ul {
   #br_2 {
 
 display: none;    bottom: -150px;
+  }
+
+  .quote {
+    bottom: 30px;
+    left: calc(50% - 200px);
   }
 
   .level .title_wrapper {
@@ -1598,8 +1613,21 @@ display: none;    bottom: -150px;
 		font-size: 25px;
   }
   
+  .quote {
+    bottom: 0px;
+    left: calc(50% - 160px);
+  }
+
+  .quote img {
+    width: 20px;
+  }
+
+  .author img {
+    margin-bottom: 20px;
+  }
+
   .quote p {
-    font-size: 25px;
+    font-size: 14px;
   }
 
   footer {
@@ -1648,7 +1676,6 @@ display: none;    bottom: -150px;
 }
 
 @media (max-width: 576px){
-
   /* header */
 
   .ul-mobile p {
@@ -1703,6 +1730,13 @@ display: none;    bottom: -150px;
     font-size: 16px;
   }
 
+  .quote {
+    padding: 10px 10px 10px 30px;
+    left: calc(50% - 150px);
+  }
+
+
+
   .wherefore_item p {
     font-size: 22px;
   }
@@ -1711,19 +1745,15 @@ display: none;    bottom: -150px;
     margin-top: 45px;
   }
 
-  .quote {
-    padding: 90px 0px;
-  }
-
   .main_img {
     display: none;
   }
 
-  .quote img {
+  /* .quote img {
     left: -40px;
     -webkit-transform: scale(0.7);
             transform: scale(0.7);
-  }
+  } */
 
   .why {
     padding-left: 10px;
