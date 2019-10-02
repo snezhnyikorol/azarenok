@@ -4,6 +4,24 @@ h4, h5, h6 {
   padding: 0;
 }
 
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
 body, html {
   overflow-x: hidden;
   font-family: "Futura PT";
@@ -521,7 +539,7 @@ header ul li {
   margin-bottom: 140px;
 }
 
-.level .section_title span {
+.meet .section_title span {
   background-color: #f7e789;
   padding: 0 20px;
 }
@@ -572,7 +590,11 @@ header ul li {
 
 /* wherefore */
 
-.wherefore .bg-gray {
+.wherefore .btn {
+  margin-top: 70px;
+}
+
+.wherefore {
   padding-top: 100px;
   padding-bottom: 100px;
 }
@@ -666,7 +688,7 @@ header ul li {
 
 
 .statistic {
-  padding: 116px 0;
+  padding: 46px 0;
   padding-bottom: 45px;
 }
 .statistic-wrap {
@@ -733,9 +755,102 @@ header ul li {
   right: -116px;
 }
 
+/* video  */
+
+
+.video {
+  padding-top: 60px;
+  padding-bottom: 48px;
+}
+
+.video .title_wrapper {
+  text-align: left;
+}
+.video-wrap {}
+.video .y-title {
+  margin-bottom: 26px;
+  font-size: 34px;
+}
+.video .left {
+  float: left;
+  width: calc(100% - 610px);
+  padding-left: 45px;
+  padding-top: 82px;
+  padding-right: 10px
+}
+.video .right {
+  width: 610px;
+  float: left;
+  text-align: center;
+}
+.video .left p {
+  font-size: 18px;
+  line-height: 1.5;
+  padding: 5px 0;
+}
+
+/* meet  */
+
+
+.meet {
+  text-align: center;
+  padding-top: 45px;
+  padding-bottom: 40px;
+}
+.meet .title {
+  margin-bottom: 32px;
+}
+.meet-wrap {
+  margin-bottom: 55px;
+  padding: 0 17px;
+}
+.meet .title_wrapper h3 {
+  font-size: 25px;
+}
+.meet .title_wrapper {
+  margin-bottom: 30px;
+}
+
+.meet-item:nth-of-type(1) .img:after {
+content: '';
+display: block;
+width: 700px;
+height: 1px;
+background: black;
+position: absolute;
+right: -636px;
+top: 47px;
+z-index: -1;
+}
+.meet-item {
+  width: 33%;
+  display: inline-block;
+  vertical-align: top;
+}
+.meet-item .img {
+  position: relative;
+  margin-bottom: 15px;
+  display: inline-block;
+}
+.meet-item p {
+  font-weight: 400;
+  line-height: 1.4;
+}
+.meet .arrow {
+  margin-bottom: 28px;
+}
+.meet .btn {
+  margin: 0 auto;
+}
+
+
 /* who */
 .who {
   position: relative;
+}
+
+.who .btn {
+  margin-top: 40px; 
 }
 
 .who .bg-gray {
@@ -764,6 +879,54 @@ header ul li {
   margin: 70px auto 0;
 }
 
+
+/* how */
+
+.how {
+  padding: 120px 0 85px 0;
+}
+
+.how_container {
+  list-style: none;
+  margin-top: 85px;
+}
+
+.how_container::before {
+  border-left: solid 1px #d4bdbf88;
+  height: 350px;
+  content: '';
+  display: block;
+  position: absolute;
+  top: 100px;
+  left: 69px;
+  z-index: 1;
+}
+
+.how_item {
+  color: #000000;
+  font-size: 24px;
+  letter-spacing: 0.24px;
+  margin: 20px 0;
+}
+
+.how_item span {
+  font-weight: 700;
+}
+
+.how_bullet {
+  -ms-flex-item-align: center;
+      align-self: center;
+  padding-right: 30px;
+  z-index: 2;
+  height: 30px;
+}
+
+.how_ticket {
+  position: absolute;
+  top: 30%;
+  right: 0px;
+  width: 30%;
+}
 
 /* what */
 
@@ -835,7 +998,7 @@ header ul li {
   position: relative;
 }
 
-.author {
+.author .bg-gray{
   padding-top: 120px;
 }
 
@@ -882,11 +1045,12 @@ header ul li {
 /* cost */
 
 .cost {
-  padding-top: 180px;
+  padding-top: 50px;
+  margin-bottom: 70px;
 }
 
 .cost .title_wrapper {
-  margin-bottom: 100px;
+  margin-bottom: 30px;
 }
 
 @media (min-width: 1500px) {
@@ -1450,9 +1614,13 @@ footer {
     padding: 10px 30px;
   }
 
-  .bg-gray {
-    /* margin: 0 25px;  */
+  .author .col-lg-6 {
+    padding-bottom: 30px;
   }
+
+	.meet-item:nth-of-type(1) .img:after {
+		display: none;
+	}
 
   .who .bg-gray {
     padding: 30px;
@@ -1467,9 +1635,32 @@ footer {
     margin-top: 30px;
   }
 
+  /* how */
+
+  .how_item {
+    font-size: 20px;
+  }
+
+  /* .how_ticket {
+    right: -74px;
+    top: 80px;
+  } */
+
+  .how_container::before {
+    height: 300px;
+  }
+
   .why img {
     right: -9%;
   }
+
+  /* video  */
+	.video .left {
+		padding: 0;
+		padding-right: 10px;
+	}
+	
+  /*  */
 
   .what {
     padding: 80px 0;
@@ -1510,7 +1701,7 @@ footer {
 	}
 	
 	.statistic {
-		padding-top: 60px;
+		padding-top: 30px;
 	}
 	
 
@@ -1583,6 +1774,56 @@ display: none;    bottom: -150px;
     -webkit-transform: scale(0.67);
             transform: scale(0.67);
   }
+
+  /* video  */
+
+  .video .left {
+		width: 100%;
+		padding: 0;
+		margin-bottom: 20px;
+		text-align: center;
+		float: none;
+	}
+	
+	.video .right {
+		width: 100%;
+		position: relative;
+		padding-bottom: 56.25%; /* 16:9 */
+		height: 0;
+		float: none;
+	}
+	
+	.video iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+  
+  .video .title_wrapper {
+    text-align: center;
+  }
+
+  .meet-item {
+		display: flex;
+		align-items: center;
+		width: 100%;
+		margin: 0 0 15px;
+	}
+	
+	.meet-item br {
+		display: none;
+	}
+	
+	.meet-item p {
+		text-align: left;
+		padding-left: 10px;
+	}
+	
+	.meet-wrap {
+		margin-bottom: 25px;
+	}
 
   .author img {
     max-width: 50%;
@@ -1665,6 +1906,10 @@ display: none;    bottom: -150px;
 
   .who_item .list_item {
     margin-left: 0;
+  }
+
+  .how_container::before {
+    height: 350px;
   }
 
 	.center-footer-block h2 {
@@ -1793,6 +2038,24 @@ display: none;    bottom: -150px;
     margin-bottom: 35px;
   }
 
+  /* video  */
+
+  .video .left p {
+		font-size: 16px;
+  }
+  
+  .how {
+    padding: 70px 0 55px;
+  }
+
+  .how_container {
+    padding-inline-start: 10px;
+  }
+  
+  .how_container::before {
+    display: none;
+  }
+
   .author_name {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1821,7 +2084,7 @@ display: none;    bottom: -150px;
 }
 
 .statistic-item p {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 /* .statistic-wrap {
@@ -1855,10 +2118,6 @@ display: none;    bottom: -150px;
 
   .why p {
     font-size: 18px;
-  }
-
-  .cost {
-    padding-top: 110px;
   }
 
   .discounts {
