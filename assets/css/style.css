@@ -640,7 +640,7 @@ header ul li {
   position: absolute;
   background-color: #fbe872;
   padding: 15px 20px 15px 40px;
-  bottom: 120px;
+  bottom: 60px;
   left: calc(50% - 200px);
 }
 
@@ -661,6 +661,42 @@ header ul li {
   top: 10px;
   width: 30px;
 }
+
+/* statistic */
+
+
+.statistic {
+  padding: 116px 0;
+  padding-bottom: 45px;
+}
+.statistic-wrap {
+  text-align: center;
+}
+.statistic-item {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 23px;
+  position: relative;
+}
+.statistic-item:last-of-type {
+
+}
+.statistic-item p {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+.statistic-item .number {
+  font-size: 45px;
+  font-weight: 700;
+  height: 85px;
+  background: #fbe872;
+  line-height: 85px;
+  display: inline-block;
+  padding: 0 39px;
+  margin-bottom: 23px;
+  min-width: 130px;
+}
+
 
 /* why */
 
@@ -801,7 +837,6 @@ header ul li {
 
 .author {
   padding-top: 120px;
-  padding-bottom: 61px;
 }
 
 .author_title {
@@ -1454,9 +1489,32 @@ footer {
   }
 
   .quote {
-    bottom: 20%;
+    bottom: 10%;
     left: calc(50% - 200px);
   }
+
+  /* .statistic */
+
+	.statistic-item {
+		position: static;
+		margin: 0 5px;
+	}
+	
+	.statistic-item .number {
+		font-size: 26px;
+		min-width: 0;
+	}
+	
+	.statistic-item p {
+		font-size: 19px;
+	}
+	
+	.statistic {
+		padding-top: 60px;
+	}
+	
+
+  /*  */
 
   .partners {
     padding: 90px;
@@ -1630,6 +1688,26 @@ display: none;    bottom: -150px;
     font-size: 14px;
   }
 
+  /* .statistic */
+	.statistic-item .number {
+		padding: 0 20px;
+	}
+	
+	.statistic-item p {
+		font-size: 14px;
+	}
+	
+	.statistic-item .number {
+		height: 60px;
+		line-height: 60px;
+	}
+	
+	.statistic {
+		padding-bottom: 0;
+	}
+	
+  /*  */
+
   footer {
 		margin: 40px 0 0;
 		background: -webkit-gradient(linear, left bottom, left top, from(rgb(237,237,237)), to(white));
@@ -1735,7 +1813,21 @@ display: none;    bottom: -150px;
     left: calc(50% - 150px);
   }
 
+/* .statistic */
 
+.statistic-item .number {
+  padding: 0 11px;
+  font-size: 19px;
+}
+
+.statistic-item p {
+  font-size: 12px;
+}
+
+/* .statistic-wrap {
+  display: flex;
+} */
+/*  */
 
   .wherefore_item p {
     font-size: 22px;
