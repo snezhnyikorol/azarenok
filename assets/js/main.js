@@ -190,3 +190,5 @@ $('#book').on('hide.bs.modal', function() {
 function hide () {
   $('#book').modal('hide');
 }
+
+// $('.wherefore_item img').before($('<div/>').addClass('wherefore_before'));

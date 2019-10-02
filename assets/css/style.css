@@ -36,6 +36,7 @@ a:hover {
   font-weight: 500;
   z-index: 2;
   position: relative;
+  display: inline;
 }
 
 .bg-gray {
@@ -594,20 +595,42 @@ header ul li {
           flex-direction: column;
   padding: 0 30px;
   text-align: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  align-items: center;
+  justify-content: space-between;
   margin-top: 90px;
 }
 
 .wherefore_item p {
+  margin-top: 20px;
   font-size: 24px;
 }
 
-.wherefore_item img {
-  -ms-flex-item-align: center;
-      align-self: center;
-  margin-bottom: 35px;
+.wherefore img {
+  z-index: 3;
+  position: relative;
+}
+
+.wherefore_img-wrapper {
+  /* -ms-flex-item-align: center;
+      align-self: center; */
+  position: relative;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wherefore_img-wrapper::before {
+  content: '';
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  background-color: #fbe872;
+  position: absolute;
+  z-index: 2;
+  top: -20px;
+  left: -20px;
 }
 
 
