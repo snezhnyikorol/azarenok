@@ -379,7 +379,7 @@ display: none;  z-index: 0;
   align-items: center;
   justify-content: center;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 3px;
-  transition: 200ms all ease-in-out;
+  transition: 200ms background-color ease-in-out;
 }
 
 .menu_btn:hover {
@@ -1004,7 +1004,7 @@ z-index: -1;
 }
 
 .author .bg-gray{
-  padding-top: 120px;
+  /* padding-top: 120px; */
 }
 
 .author_title {
@@ -1316,6 +1316,16 @@ z-index: -1;
 
 /* contacts */
 
+.social_img {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+}
+
+.social_link:hover {
+  background-image: none;
+}
+
 .contacts {
   padding-top: 140px;
 }
@@ -1546,6 +1556,10 @@ footer {
   border-bottom: none;
 }
 
+.modal-title {
+  font-size: 1.7rem;
+}
+
 
 @media screen and (max-width: 1500px) {
   /*fonts size*/
@@ -1626,7 +1640,7 @@ footer {
   }
 
   .author .col-lg-6 {
-    padding-bottom: 30px;
+    /* padding-bottom: 30px; */
   }
 
 	.meet-item:nth-of-type(1) .img:after {
@@ -1732,6 +1746,11 @@ footer {
 }
 
 @media screen and (max-width: 992px) {
+  .menu_btn-mobile {
+    position: absolute;
+    top:100px;
+  }
+
 /* header */
 
 header {
@@ -1837,7 +1856,11 @@ display: none;    bottom: -150px;
 	}
 
   .author img {
-    max-width: 50%;
+    /* max-width: 50%; */
+  }
+
+  .q_form form + .row {
+    margin-top: 30px;
   }
 
   .discounts .container {
@@ -1937,7 +1960,7 @@ display: none;    bottom: -150px;
   }
 
   .author img {
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
   }
 
   .quote p {
@@ -2001,7 +2024,7 @@ display: none;    bottom: -150px;
   }
   
   .q_tel {
-    font-size: 20px;
+    font-size: 25px;
   }
 
   .phone {
@@ -2157,7 +2180,11 @@ display: none;    bottom: -150px;
 	.map .btn {
 		margin-bottom: 15px;
 		margin-top: 15px;
-	}
+  }
+  
+  .quote br {
+    display: none;
+  }
 }
 
 .modal-open section,

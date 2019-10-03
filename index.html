@@ -19,7 +19,7 @@
     </head>
     <body>
         <div class="page_wrapper">
-        <div class="menu_btn">
+        <div class="menu_btn menu_btn-mobile">
             <div class="burger-wrapper">
                 <div class="burger-1"></div>
                 <div class="burger-2"></div>
@@ -48,7 +48,7 @@
                         <a href="#contacts" class="map_item">Место проведения</a>
                     </div>	
                     
-                    <a href="tel://+375336275421" class="phone">+375 33 627 54 21</a>
+                    <a href="tel://+375296815530" class="phone">+375 (29) 681-55-30</a>
                 </div>
             </div>
         </nav>
@@ -63,11 +63,11 @@
                                         <li data-wow-delay=".2s" class="wow fadeInDown">VOKA Cinema</li>
                                         <li data-wow-delay=".3s" class="wow fadeInDown">10 декабря</li>
                                         <li data-wow-delay=".4s" class="wow fadeInDown">10:00</li>
-                                        <li data-wow-delay=".5s" class="wow fadeInDown"><a href="tel://">+375 (33) 627-54-21</a></li>
+                                        <li data-wow-delay=".5s" class="wow fadeInDown"><a href="tel://+375336485394">+375 (33) 648-53-94</a></li>
                                     </ul>
                                     <div class="ul-mobile">
                                         <p>Минск <br>VOKA Cinema<br>ТРЦ Dana Mall </p>
-                                        <p>10 декабря <br> 10:00<br> <a href="tel://">+375 (33) 627-54-21</a></p>
+                                        <p>10 декабря <br> 10:00<br> <a href="tel://+375336485394">+375 (33) 648-53-94</a></p>
                                     </div>
                                 </header>
                             <div class="row">
@@ -204,7 +204,7 @@
                         <div class="container">
                                 <div class="row">
                                     <div class="col-lg-6 d-flex align-items-center justify-content-center">
-                                        <img class="img-fluid" src="assets/img/author.png" alt="">
+                                        <img class="img-fluid" src="assets/img/photo/author.jpg" alt="">
                                         <div class="quote">
                                                 <img class="quote_img" src="./assets/img/quote/quote.png" alt="">
                                                 <p><span>Личный бренд</span> - это та наценка, которую будут<br>
@@ -679,12 +679,18 @@
                     </div>
                 </form>
                 <div class="row">
-                    <div class="col-lg-4">
-                        <a class="q_tel" href="tel:/">+375 (29) 174-36-24</a>
+                    <div class="col-lg-4 col-md-6 justify-content-center justify-content-md-start my-3 my-md-0 d-flex align-items-center">
+                        <a class="q_tel" href="tel://+375296815530">+375 (29) 681-55-30</a>
                     </div>
-                    <div class="col-lg-4">
-                        <a href="">
-                            <img src="">
+                    <div class="col-lg-4 col-md-6 justify-content-center justify-content-md-start d-flex flex-row">
+                        <a class="social_link" href="">
+                            <img class="social_img" src="./assets/img/q_form/viber.svg">
+                        </a>
+                        <a class="social_link" href="">
+                            <img class="social_img" src="./assets/img/q_form/telegram.svg">
+                        </a>
+                        <a class="social_link" href="">
+                            <img class="social_img" src="./assets/img/q_form/whatsapp.svg">
                         </a>
                     </div>
                 </div>
@@ -706,9 +712,8 @@
                         <h3>10 декабря, 10:00</h3>
                         <div class="numbers d-flex flex-column mt-5">
                             <h3>Телефоны:</h3>
-                            <a class="link" href="tel://+375257824513">+375 25 782 45 13</a>
-                            <a class="link" href="tel://+375291743624">+375 29 174 36 24</a>
-                            <a class="link" href="tel://+375292867432">+375 29 286 74 32</a>
+                            <a class="link" href="tel://+375336485394">+375 (33) 648-53-94</a>
+                            <a class="link" href="tel://+375296815530">+375 (29) 681-55-30</a>
                         </div>
                     </div>
                 
@@ -747,18 +752,18 @@
             <div class="modal fade" id="book" tabindex="-1" role="dialog" aria-labelledby="bookTicket" aria-hidden="true">
                 <img src="./assets/img/brush/11.png" alt="" id="br_12" onclick="hide()">
                 <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="bookTicket">Забронировать билет</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <div class="modal-content container py-4 py-sm-5">
+                        <div class="modal-header text-center row">
+                            <h5 class="modal-title col" id="bookTicket">Забронировать билет</h5>
+                            <!-- <button type="button" class="close col-1" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
-                            </button>
+                            </button> -->
                         </div>
-                        <div class="modal-body">
+                        <div class="modal-body p-4 p-sm-5">
                             <form id="modalForm" class="text-center" action="">
                                 <input name="name" class="modal_input" type="text" placeholder="Имя">
                                 <input name="phone" class="modal_input" type="text" placeholder="+375 (__) ___-__-__">
-                                <a id="modalSubmit" href="" class="btn btn-primary mt-4">Забронировать</a>
+                                <a id="modalSubmit" href="" class="btn btn-primary mt-4 w-100">Забронировать</a>
                             </form>
                         </div>
                     </div>

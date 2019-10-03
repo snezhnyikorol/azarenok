@@ -1,4 +1,12 @@
 $(window).scroll(function(){
+    scroll = $(window).scrollTop();
+    if (scroll >= 60) {
+      $('.menu_btn').removeClass('menu_btn-mobile');
+    }
+    else {
+      $('.menu_btn').addClass('menu_btn-mobile');
+    } 
+
     checkMap()
 });
 
