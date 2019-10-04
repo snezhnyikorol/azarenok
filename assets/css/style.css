@@ -778,13 +778,13 @@ header ul li {
 }
 .video .left {
   float: left;
-  width: calc(100% - 610px);
+  width: calc(100% - 310px);
   padding-left: 45px;
   padding-top: 82px;
   padding-right: 10px
 }
 .video .right {
-  width: 610px;
+  width: 310px;
   float: left;
   text-align: center;
 }
