@@ -213,4 +213,28 @@ function hide () {
   $('#book').modal('hide');
 }
 
+$(document).ready(function(){
+  $('.slider_container').slick({
+    arrows: true,
+    slidesToShow: 2,
+    adaptiveHeight: true,
+    responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 1
+      }
+    },
+    {
+      breakpoint: 580,
+      settings: {
+        arrows: false,
+        dots: true,
+        slidesToShow: 1
+      }
+    }
+  ]
+  });
+});
+
 // $('.wherefore_item img').before($('<div/>').addClass('wherefore_before'));
