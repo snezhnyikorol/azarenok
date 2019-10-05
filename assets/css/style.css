@@ -794,6 +794,52 @@ header ul li {
   padding: 5px 0;
 }
 
+/* questions */
+.questions {
+  padding-top: 70px;
+  padding-bottom: 65px;
+}
+
+.questions .container {
+  max-width: 1000px;
+}
+
+.questions .title_wrapper {
+  margin-bottom: 60px;
+}
+
+.questions_card {
+  border: 2px solid #e8e8e8;
+  padding: 27px 40px;
+  cursor: pointer;
+}
+
+.questions .col-lg-12:not(:first-child) .questions_card {
+  border-top: none;
+}
+
+.questions_card-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.questions_card h6 {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.questions_card-text {
+  color: #000000;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.18px;
+  margin-top: 50px;
+  display: none;
+  /* display: block; */
+}
+
 /* meet  */
 
 
@@ -2103,6 +2149,10 @@ display: none;    bottom: -150px;
 
   .author_pluces-container li > span {
     font-size: 16px;
+  }
+
+  .questions_card {
+    padding: 15px 20px;
   }
 
   .quote {
