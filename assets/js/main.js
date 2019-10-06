@@ -167,7 +167,7 @@ function checkMap() {
   }
 }
 
-$('.questions_card').on('click', (e) => {
+$('.questions_card1').on('click', (e) => {
     $(e.currentTarget).children('.questions_card-text').toggle('fast')
     console.log($(e.currentTarget).find('.questions_card-img').css('transform'))
     if ($(e.currentTarget).find('.questions_card-img').css('transform')!=='none') {
