@@ -495,7 +495,7 @@ header ul li {
 
   .main_img {
     width: auto;
-    right: -7%;
+    right: -14%;
   }
 }
 
@@ -532,7 +532,7 @@ header ul li {
 
 .level {
   padding-top: 120px;
-  padding-bottom: 180px;
+  padding-bottom: 40px;
 }
 
 .level .section_title span {
@@ -597,6 +597,10 @@ header ul li {
 
 .wherefore .btn {
   margin-top: 70px;
+}
+
+.wherefore .bg-gray {
+  padding: 70px 0;
 }
 
 .wherefore {
@@ -988,7 +992,7 @@ z-index: -1;
 /* how */
 
 .how {
-  padding: 120px 0 85px 0;
+  padding: 90px 0 85px 0;
 }
 
 .how_container {
@@ -1417,9 +1421,14 @@ z-index: -1;
 /* contacts */
 
 .social_img {
-  width: 60px;
-  height: 60px;
+  width: 45px;
+  height: 45px;
   margin-right: 10px;
+  color: rgb(173, 181, 189);
+}
+
+.social_img:hover, .social_img:focus {
+  color: rgb(126, 132, 136);
 }
 
 .social_link:hover {
@@ -1895,6 +1904,15 @@ display: none;    bottom: -150px;
     left: calc(50% - 200px);
   }
 
+  .author .bg-gray {
+    padding: 30px 0;
+  }
+
+  .author_img {
+    max-height: 500px;
+    margin: 0 auto;
+  }
+
   .level .title_wrapper {
     margin-bottom: 50px;
   }
@@ -2041,6 +2059,10 @@ display: none;    bottom: -150px;
   .who_item .list_item {
     margin-left: 0;
   }
+  
+  .video .right {
+    display: none;
+  }
 
   .how_container::before {
     height: 350px;
@@ -2160,7 +2182,7 @@ display: none;    bottom: -150px;
 
   .level {
     padding-top: 80px;
-    padding-bottom: 120px;
+    padding-bottom: 0px;
   }
 
   .what_subtitle, .what_afterword, .who_afterword, .level_item p {
