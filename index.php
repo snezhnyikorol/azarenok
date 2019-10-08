@@ -22,6 +22,15 @@
 
     </head>
     <body>
+                    <?php
+                       ini_set('log_errors','Off');
+                       $utm_medium = $_GET["utm_medium"];
+                       $utm_source = $_GET["utm_source"];
+                       $utm_campaign = $_GET["utm_campaign"];
+                       $utm_term = $_GET["utm_term"];
+                       $utm_content = $_GET["utm_content"];
+                    ?>
+        
         <div class="page_wrapper">
         <div class="menu_btn menu_btn-mobile">
             <div class="burger-wrapper">
@@ -88,7 +97,7 @@
                                         <img src="./assets/img/icons/check.png" alt="">
                                         <p>Превращаем ваше ФИО в деньги</p>
                                     </div>
-                                    <a href="" class="btn btn-primary" data-toggle="modal" data-target="#book">Активировать личный бренд</a>
+                                    <a href="" class="btn btn-primary" data-type="Форма бронирования" data-toggle="modal" data-target="#book">Активировать личный бренд</a>
                                 </div>
                                 <img class="main_img img-fluid" src="./assets/img/main/photo.png" alt="">
                             </div>
@@ -199,7 +208,7 @@
                                 </div>
                             </div>
 
-                            <a href="" class="btn btn-primary" data-toggle="modal" data-target="#book">Активировать личный бренд</a>
+                            <a href="" class="btn btn-primary" data-type="Форма бронирования" data-toggle="modal" data-target="#book">Активировать личный бренд</a>
                         </div>
             </div>
             <img src="./assets/img/brush/3.png" alt="" id="br_3">
@@ -256,7 +265,7 @@
                             <div class="statistic-item wow fadeIn">
                                 <p>более</p>
                                 <div class="number">1 млн</div>
-                                <p>прослушиваний<br> подкаста <br>«Будь Брендом</p>
+                                <p>прослушиваний<br> подкаста <br>«Будь Брендом»</p>
                             </div>				
                         </div>
                     </div>
@@ -282,11 +291,10 @@
                                 <p class="how_item"></p>
                             </div>
                             <div class="col-lg-4 d-flex justify-content-center align-items-center">
-                                <!--<img class="how_ticket d-none d-lg-inline" src="./assets/img/what/1.jpg">-->
                                 <img class="img-fluid author_img mt-lg-5" src="./assets/img/what/1.jpg">
                             </div>
                             <div class="col-12 text-center">
-                                <a href="" class="btn btn-primary mt-5" data-toggle="modal" data-target="#book">Активировать личный бренд</a>
+                                <a href="" class="btn btn-primary mt-5" data-type="Форма бронирования" data-toggle="modal" data-target="#book">Активировать личный бренд</a>
                             </div>
                         </div>
                     </div>
@@ -396,7 +404,7 @@
                                     </div>
                                     <p class="who_afterword">Это нужно всем, кто хочет стать популярным,  востребованным и высокооплачиваемым специалистом</p>
 
-                                    <a href="" class="btn btn-primary" data-toggle="modal" data-target="#book">Забронировать место</a>
+                                    <a href="" class="btn btn-primary" data-type="Форма бронирования" data-toggle="modal" data-target="#book">Забронировать место</a>
                                 </div>
                     </div>
                     <img src="./assets/img/brush/5.png" alt="" id="br_5">
@@ -415,7 +423,7 @@
                                     <h5>Благодарю Вас, Мария <a href="https://www.instagram.com/azarenokpro/">@azarenokpro</a>, за очень ценные знания - значимость, которых мне еще предстоит осознать. Ну и конечно <a href="https://www.instagram.com/olga_chebykina_/">@olga_chebykina_</a> ОГРОМНАЯ благодарность тебе. Ты делаешь великое дело - помогаешь людям развиваться! 🔥🔥👍🏻 🚀🚀🚀</h5>
                                     <div class="d-flex justify-content-start align-items-center slide_link" href="">
                                         <img src="https://instagram.fmsq4-1.fna.fbcdn.net/vp/424f6f19ad0b01297650e8605350707a/5E28F808/t51.2885-19/s320x320/67159657_402429080622451_5540386113941667840_n.jpg?_nc_ht=instagram.fmsq4-1.fna.fbcdn.net">
-                                        <a  href="https://www.instagram.com/artemperspektiva/" class="ml-4">artemperspektiva</a>
+                                        <a target="_blank" href="https://www.instagram.com/artemperspektiva/" class="ml-4">artemperspektiva</a>
                                     </div>
                                 </div>
                             </article>
@@ -425,7 +433,7 @@
                                     <h5>Спасибо огромное за море полезной информации!!!🌹 После такого завтрака - желание творить и развиваться😊</h5>
                                     <div class="d-flex justify-content-start align-items-center slide_link" href="">
                                         <img src="https://instagram.fmsq4-1.fna.fbcdn.net/vp/5481abe34f6ace21d5da8d725b070388/5E17DDDA/t51.2885-19/s320x320/64988399_712121499237743_118579571686637568_n.jpg?_nc_ht=instagram.fmsq4-1.fna.fbcdn.net">
-                                        <a  href="https://www.instagram.com/buhexpert/" class="ml-4">buhexpert</a>
+                                        <a target="_blank" href="https://www.instagram.com/buhexpert/" class="ml-4">buhexpert</a>
                                     </div>
                                 </div>
                             </article>
@@ -435,7 +443,7 @@
                                     <h5>Благодарю Мария за такой содержательный интенсив тренинг!!! Все по полочкам, системно, понятно, профессионально! 👌 главное теперь реализовать полученные инсайды!🤗 удачи вам, надеюсь попасть еще раз к вам на обучение!!!🌹🌹🌹</h5>
                                     <div class="d-flex justify-content-start align-items-center slide_link" href="">
                                         <img src="https://instagram.fmsq4-1.fna.fbcdn.net/vp/1f13701749e0dca724bab84cdeb07e73/5E1EFDBA/t51.2885-19/s320x320/58409581_972450986290458_6886884663617388544_n.jpg?_nc_ht=instagram.fmsq4-1.fna.fbcdn.net">
-                                        <a  href="https://www.instagram.com/gulzhan_azhikenova/" class="ml-4">gulzhan_azhikenova</a>
+                                        <a target="_blank" href="https://www.instagram.com/gulzhan_azhikenova/" class="ml-4">gulzhan_azhikenova</a>
                                     </div>
                                 </div>
                             </article>
@@ -445,7 +453,7 @@
                                     <h5>Мария,такие мастер классы,как ваш -очень большая редкость! Спасибо вам за настоящие и практически применимые знания! Каждая минута была наполнена смыслом и одним инсайтом не описать проведённое с вами время!💐💐💐</h5>
                                     <div class="d-flex justify-content-start align-items-center slide_link" href="">
                                         <img src="https://instagram.fmsq4-1.fna.fbcdn.net/vp/d40432952826c50b6897f16991e39ed0/5E36D53E/t51.2885-19/s320x320/68728047_355356862082157_8339902134560489472_n.jpg?_nc_ht=instagram.fmsq4-1.fna.fbcdn.net">
-                                        <a  href="https://www.instagram.com/valeriyabondarenko565/" class="ml-4">valeriyabondarenko565</a>
+                                        <a target="_blank" href="https://www.instagram.com/valeriyabondarenko565/" class="ml-4">valeriyabondarenko565</a>
                                     </div>
                                 </div>
                             </article>
@@ -455,7 +463,7 @@
                                     <h5>Спасибо за уделённое время! Для себя я вынес - каждый из нас независимо не от чего бренд, его только надо развивать.Каждый день прикладывать усилия. И хватит с тебя оправданий! Начни действовать!</h5>
                                     <div class="d-flex justify-content-start align-items-center slide_link" href="">
                                         <img src="https://instagram.fmsq4-1.fna.fbcdn.net/vp/e31ed03556f38a676939f6f1b336d794/5E31BFBE/t51.2885-19/s320x320/67264443_335218610696798_3514925562017611776_n.jpg?_nc_ht=instagram.fmsq4-1.fna.fbcdn.net">
-                                        <a  href="https://www.instagram.com/artemka_alfach/" class="ml-4">artemka_alfach</a>
+                                        <a target="_blank" href="https://www.instagram.com/artemka_alfach/" class="ml-4">artemka_alfach</a>
                                     </div>
                                 </div>
                             </article>
@@ -465,7 +473,7 @@
                                     <h5>Все к Азаренок! Кому- формировать Бренд! Четкий алгоритм, структурный контент! Азаренок- БрендМайкер🔥🌟🔥</h5>
                                     <div class="d-flex justify-content-start align-items-center slide_link" href="">
                                         <img src="https://instagram.fmsq4-1.fna.fbcdn.net/vp/774a49590fdfd84a5de0285e154cfdc6/5E331B01/t51.2885-19/s320x320/51474948_2204604156458946_3833255511361323008_n.jpg?_nc_ht=instagram.fmsq4-1.fna.fbcdn.net">
-                                        <a  href=" https://www.instagram.com/ishwari11/" class="ml-4">ishwari11</a>
+                                        <a target="_blank" href=" https://www.instagram.com/ishwari11/" class="ml-4">ishwari11</a>
                                     </div>
                                 </div>
                             </article>
@@ -654,119 +662,176 @@
                 <div class="title_wrapper">
                     <h1 class="section_title underlined">Стоимость билетов</h1>
                 </div>
-                <table class="table table-striped table-borderless d-none d-lg-block">
+                <table class="table table-striped table-borderless d-none d-lg-table">
                     <thead>
                         <tr>
                             <th scope="col"></th>
-                            <th scope="col">Онлайн
-                                участие</th>
-                            <th scope="col">Офлайн
-                                2 дня</th>
-                            <th scope="col">Офлайн
-                                2 дня + обеды</th>
-                            <th scope="col">Офлайн
-                                2 дня + воркшопы</th>
+                            <th scope="col">Эконом</th>
+                            <th scope="col">Стандарт</th>
+                            <th scope="col">VIP</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr class="table_content">
-                            <th scope="row">Онлайн-трансляция</th>
-                            <td>+</td>
-                            <td>-</td>
-                            <td>+</td>
-                            <td>-</td>
+                            <th scope="row">Ряд</th>
+                            <td>7-9</td>
+                            <td>3-6</td>
+                            <td>1-2</td>
                         </tr>
                         <tr class="table_content">
-                            <th scope="row">Видеозаписи конференции</th>
+                            <th scope="row">Участие в мероприятии</th>
                             <td>+</td>
-                            <td>-</td>
                             <td>+</td>
-                            <td>-</td>
+                            <td>+</td>
                         </tr>
                         <tr class="table_content">
-                            <th scope="row">Презентации спикеров</th>
+                            <th scope="row">Дополнительные материалы для тренинга</th>
                             <td>+</td>
-                            <td>-</td>
                             <td>+</td>
-                            <td>-</td>
+                            <td>+</td>
                         </tr>
-                        <tr class="table_cost">
+                        <tr class="table_content">
+                            <th scope="row">Нетворкинг</th>
+                            <td>+</td>
+                            <td>+</td>
+                            <td>+</td>
+                        </tr>
+                        <tr class="table_content">
+                            <th scope="row">Презентация тренинга в формате PDF</th>
+                            <td>-</td>
+                            <td>+</td>
+                            <td>+</td>
+                        </tr>
+                        <tr class="table_content">
+                            <th scope="row">Чат участников тренинга</th>
+                            <td>-</td>
+                            <td>+</td>
+                            <td>+</td>
+                        </tr>
+                        <tr class="table_content">
+                            <th scope="row">Участие в розыгрыше от партнеров</th>
+                            <td>-</td>
+                            <td>+</td>
+                            <td>+</td>
+                        </tr>
+                        <tr class="table_content">
+                            <th scope="row">Сертификат о похождении тренинга</th>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>+</td>
+                        </tr>
+                        <tr class="table_content">
+                            <th scope="row">Afterparty со спикером и VIP гостями</th>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>+</td>
+                        </tr>
+                        <!-- <tr class="table_cost">
                             <th scope="row"></th>
                             <td>6&nbsp;900&nbsp;руб.</td>
                             <td>6&nbsp;900&nbsp;руб.</td>
                             <td>6&nbsp;900&nbsp;руб.</td>
                             <td>6&nbsp;900&nbsp;руб.</td>
-                        </tr>
+                        </tr> -->
                         <tr>
                             <th scope="row"></th>
-                            <td><a href="" class="btn btn-primary" data-toggle="modal" data-target="#book">Купить</a></td>
-                            <td><a href="" class="btn btn-primary" data-toggle="modal" data-target="#book">Купить</a></td>
-                            <td><a href="" class="btn btn-primary" data-toggle="modal" data-target="#book">Купить</a></td>
-                            <td><a href="" class="btn btn-primary" data-toggle="modal" data-target="#book">Купить</a></td>
+                            <td><a href="" class="btn btn-primary" data-toggle="modal" data-type="Билет эконом" data-toggle="modal" data-target="#book">Купить</a></td>
+                            <td><a href="" class="btn btn-primary" data-toggle="modal" data-type="Билет стандарт" data-target="#book">Купить</a></td>
+                            <td><a href="" class="btn btn-primary" data-toggle="modal" data-type="Билет VIP" data-target="#book">Купить</a></td>
                         </tr>
                     </tbody>
                 </table>
 
                 <div class="cost_mobile d-block d-lg-none">
                     <div class="cost_mobile-item">
-                        <h2>Онлайн
-                            участие</h2>
+                        <h2>Эконом</h2>
                         <div>
-                            <p class="enabled">Онлайн-трансляция</p>
+                            <p class="enabled">Места 7-9 ряды</p>
                         </div>
                         <div>
-                            <p class="enabled">Видеозаписи конференции</p>
+                            <p class="enabled">Участие в мероприятии</p>
                         </div>
                         <div>
-                            <p class="enabled">Презентации спикеров</p>
+                            <p class="enabled">Дополнительные материалы для тренинга</p>
                         </div>
-                        <p class="cost_price">6&nbsp;900&nbsp;руб.</p>
-                        <a href="" class="btn btn-primary" data-toggle="modal" data-target="#book">Купить</a>
+                        <div>
+                            <p class="enabled">Нетворкинг</p>
+                        </div>
+                        <div>
+                            <p class="disabled">Презентация тренинга в формате PDF</p>
+                        </div>
+                        <div>
+                            <p class="disabled">Чат участников тренинга</p>
+                        </div>
+                        <div>
+                            <p class="disabled">Участие в розыгрыше от партнеров</p>
+                        </div>
+                        <div>
+                            <p class="disabled">Сертификат о похождении тренинга</p>
+                        </div>
+                        <div>
+                            <p class="disabled">Afterparty со спикером и VIP гостями</p>
+                        </div>                                                                        
+                        <!-- <p class="cost_price">6&nbsp;900&nbsp;руб.</p> -->
+                        <a href="" class="btn btn-primary" data-type="Билет эконом" data-toggle="modal" data-target="#book">Купить</a>
                     </div>
                     <div class="cost_mobile-item">
-                        <h2>Офлайн
-                            2 дня</h2>
+                        <h2>Стандарт</h2>
                         <div>
-                            <p class="disabled">Онлайн-трансляция</p>
+                            <p class="enabled">Участие в мероприятии</p>
                         </div>
                         <div>
-                            <p class="disabled">Видеозаписи конференции</p>
+                            <p class="enabled">Дополнительные материалы для тренинга</p>
                         </div>
                         <div>
-                            <p class="disabled">Презентации спикеров</p>
+                            <p class="enabled">Нетворкинг</p>
                         </div>
-                        <p class="cost_price">6&nbsp;900&nbsp;руб.</p>
-                        <a href="" class="btn btn-primary" data-toggle="modal" data-target="#book">Купить</a>
+                        <div>
+                            <p class="enabled">Презентация тренинга в формате PDF</p>
+                        </div>
+                        <div>
+                            <p class="enabled">Чат участников тренинга</p>
+                        </div>
+                        <div>
+                            <p class="enabled">Участие в розыгрыше от партнеров</p>
+                        </div>
+                        <div>
+                            <p class="disabled">Сертификат о похождении тренинга</p>
+                        </div>
+                        <div>
+                            <p class="disabled">Afterparty со спикером и VIP гостями</p>
+                        </div>                                                                        
+                        <!-- <p class="cost_price">6&nbsp;900&nbsp;руб.</p> -->
+                        <a href="" class="btn btn-primary" data-type="Билет стандарт" data-toggle="modal" data-target="#book">Купить</a>
                     </div>
                     <div class="cost_mobile-item">
-                        <h2>Офлайн
-                            2 дня + обеды</h2>
+                        <h2>VIP</h2>
                         <div>
-                            <p class="enabled">Онлайн-трансляция</p>
+                            <p class="enabled">Участие в мероприятии</p>
                         </div>
                         <div>
-                            <p class="enabled">Видеозаписи конференции</p>
+                            <p class="enabled">Дополнительные материалы для тренинга</p>
                         </div>
                         <div>
-                            <p class="enabled">Презентации спикеров</p>
-                        </div>
-                        <p class="cost_price">6&nbsp;900&nbsp;руб.</p>
-                        <a href="" class="btn btn-primary" data-toggle="modal" data-target="#book">Купить</a>
-                    </div>
-                    <div class="cost_mobile-item">
-                        <h2>Офлайн
-                            2 дня + воркшопы</h2>
-                        <div>
-                            <p class="disabled">Онлайн-трансляция</p>
+                            <p class="enabled">Нетворкинг</p>
                         </div>
                         <div>
-                            <p class="disabled">Видеозаписи конференции</p>
+                            <p class="enabled">Презентация тренинга в формате PDF</p>
                         </div>
                         <div>
-                            <p class="disabled">Презентации спикеров</p>
+                            <p class="enabled">Чат участников тренинга</p>
                         </div>
-                        <p class="cost_price">6&nbsp;900&nbsp;руб.</p>
-                        <a href="" class="btn btn-primary" data-toggle="modal" data-target="#book">Купить</a>
+                        <div>
+                            <p class="enabled">Участие в розыгрыше от партнеров</p>
+                        </div>
+                        <div>
+                            <p class="enabled">Сертификат о похождении тренинга</p>
+                        </div>
+                        <div>
+                            <p class="enabled">Afterparty со спикером и VIP гостями</p>
+                        </div>                                                                        
+                        <!-- <p class="cost_price">6&nbsp;900&nbsp;руб.</p> -->
+                        <a href="" class="btn btn-primary" data-type="Билет VIP" data-toggle="modal" data-target="#book">Купить</a>
                     </div>
                 </div>
 
@@ -784,28 +849,28 @@
                             <h1>10%</h1>
                             <h3>2 человека</h3>
                         </div>     
-                        <a class="btn btn-primary" href="" data-toggle="modal" data-target="#book">Заказать</a>               
+                        <a class="btn btn-primary" data-type="Скидка 2 человека" href="" data-toggle="modal" data-target="#book">Заказать</a>               
                     </div>
                     <div class="col-lg-4 text-center">
                         <div class="discounts_container">
                             <h1>15%</h1>
                             <h3>от 3 человек</h3>
                         </div>     
-                        <a class="btn btn-primary" href="" data-toggle="modal" data-target="#book">Заказать</a>  
+                        <a class="btn btn-primary" data-type="Скидка от 3 человек" href="" data-toggle="modal" data-target="#book">Заказать</a>  
                     </div>
                     <div class="col-lg-4 text-center">
                         <div class="discounts_container">
                             <h1>20%</h1>
-                            <h3>от 5 человека</h3>
+                            <h3>от 5 человек</h3>
                         </div>     
-                        <a class="btn btn-primary" href="" data-toggle="modal" data-target="#book">Заказать</a>  
+                        <a class="btn btn-primary" data-type="Скидка от 5 человек" href="" data-toggle="modal" data-target="#book">Заказать</a>  
                     </div>
                 </div>
                 <h6 class="text-center discounts_afterword mt-4">* Скидки не суммируются. Если у вас есть промокод, сообщите о нем менеджеру</h6>
             </div>
         </section>
 
-        <section class="afterparty" id="afterparty">
+        <!-- <section class="afterparty" id="afterparty">
             <div class="bg-gray">
                     <div class="container">
                             <div class="row">
@@ -860,9 +925,9 @@
             </div>
             <img src="./assets/img/brush/9.png" alt="" id="br_9">
             <img src="./assets/img/brush/10.png" alt="" id="br_10">
-        </section>
+        </section> -->
 
-        <section class="partners" id="partners">
+        <!-- <section class="partners" id="partners">
             <div class="container">
                 <div class="title_wrapper">
                     <h1 class="section_title underlined">Партнеры</h1>
@@ -882,7 +947,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         
         <section class="q_form" id="q_form">
@@ -890,6 +955,12 @@
                 <h2 class="text-center">Остались вопросы?</h2>
                 <h2 class="text-center">Свяжитесь с организаторами</h2>
                 <form id="form" class="row">
+                        <input  name="utm_medium" value="<?=$utm_medium;?>" type="hidden">
+                        <input  name="utm_source" value="<?=$utm_source;?>" type="hidden">
+                        <input  name="utm_campaign" value="<?=$utm_campaign;?>" type="hidden">
+                        <input  name="utm_term" value="<?=$utm_term;?>" type="hidden">
+                        <input  name="utm_content" value="<?=$utm_content;?>" type="hidden">
+                      <input type="hidden" name="form" value="Форма связи с организаторами">
                     <div class="col-lg-3 my-3 my-lg-0">
                         <input type="" name="name" placeholder="Имя">
                     </div>
@@ -897,7 +968,7 @@
                         <input type="" name="phone" placeholder="+375 (__) ___-__-__">
                     </div>
                     <div class="col-lg-3 my-3 my-lg-0">
-                        <input type="" name="main" placeholder="Почта">
+                        <input type="" name="mail" placeholder="Почта">
                     </div>
                     <div class="col-lg-3 my-3 my-lg-0 d-lg-flex align-items-lg-center">
                         <a id="submit" href="" class="btn btn-primary">Связаться</a>
@@ -986,6 +1057,12 @@
                         </div>
                         <div class="modal-body p-4 p-sm-5">
                             <form id="modalForm" class="text-center" action="">
+                                    <input  name="utm_medium" value="<?=$utm_medium;?>" type="hidden">
+                                    <input  name="utm_source" value="<?=$utm_source;?>" type="hidden">
+                                    <input  name="utm_campaign" value="<?=$utm_campaign;?>" type="hidden">
+                                    <input  name="utm_term" value="<?=$utm_term;?>" type="hidden">
+                                    <input  name="utm_content" value="<?=$utm_content;?>" type="hidden">
+                                  <input id="formtype" type="hidden" name="form" value="">
                                 <input name="name" class="modal_input" type="text" placeholder="Имя">
                                 <input name="phone" class="modal_input" type="text" placeholder="+375 (__) ___-__-__">
                                 <a id="modalSubmit" href="" class="btn btn-primary mt-4 w-100">Забронировать</a>
@@ -994,6 +1071,22 @@
                     </div>
                 </div>
             </div>   
+
+            <div id="greeting" class="modal fade" tabindex="-1" role="dialog">
+                <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Спасибо!</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                        <p class="greeting_text">Спасибо, ваша заявка отправлена!</p>
+                    </div>
+                  </div>
+                </div>
+              </div>            
         
         <script src="./vendor/mask/jquery.maskedinput.min.js"></script>
         <script src="./assets/js/main.js"></script>

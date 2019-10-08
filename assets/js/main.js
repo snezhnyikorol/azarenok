@@ -183,30 +183,17 @@ $('.questions_card1').on('click', (e) => {
 
 $("input[name='phone']").mask("+375 (99) 999-99-99");
 
-$('#submit').click((e) => {
-  $('#form').submit()
-  e.preventDefault()
-})
 
-$('#modalSubmit').click((e) => {
-  $('#modalForm').submit()
-  e.preventDefault()
-})
-
-$('#book').on('show.bs.modal', function() {
-    $('html').addClass('noscroll');
-    // $('*:not(.modal)').css('filter', 'blur(1.3075px)')
-    // $('.page_wrapper').css({
-    //     '-webkit-filter': 'blur(2px)',
-    //     '-moz-filter': 'blur(2px)',
-    //     '-o-filter': 'blur(2px)',
-    //     '-ms-filter': 'blur(2px)',
-    //     'filter': 'blur(2px)'
-    // })
+$('#greeting').on('hide.bs.modal', function() {
+    $('html').removeClass('noscroll');
 })
 
 $('#book').on('hide.bs.modal', function() {
-    $('html').removeClass('noscroll');
+  $('html').removeClass('noscroll');
+})
+
+$('#greeting').on('show.bs.modal', function() {
+  $('html').addClass('noscroll');
 })
 
 function hide () {
@@ -238,3 +225,55 @@ $(document).ready(function(){
 });
 
 // $('.wherefore_item img').before($('<div/>').addClass('wherefore_before'));
+
+
+
+$('#submit').click((e) => {
+  $('#form').submit()
+  e.preventDefault()
+})
+
+$('#modalSubmit').click((e) => {
+  $('#modalForm').submit()
+  e.preventDefault()
+})
+
+$('form').submit(function(e) {
+  e.preventDefault();
+  let form_data = $(this).serialize();
+  let url = 'send.php';
+  let posting = $.post(url, form_data);
+  posting.done(function(data) {
+    $('#book').modal('hide');
+    // $('#consultation').modal('hide');
+    $('#greeting').modal('show');
+  })
+})
+
+$('#book').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget) 
+  var recipient = button.data('type') 
+
+  if (recipient === "Скидка 2 человека" || recipient === "Скидка от 3 человек" || recipient === "Скидка от 5 человек") {
+    $('#bookTicket').text('Заказать скидку');
+    $('#modalSubmit').text('Заказать');
+  } else {
+    $('#bookTicket').text('Забронировать билет');
+    $('#modalSubmit').text('Забронировать');
+  }
+
+  $('#formtype').val(recipient)
+  $('html').addClass('noscroll')
+})
+
+$('td').each(function() {
+  if ($(this).text() === '+') {
+    $(this).css({
+      'color' : '#25a36f'
+    })
+  } else if ($(this).text() === '-') {
+    $(this).css({
+      'color' : '#da3535'
+    })
+  }
+})
