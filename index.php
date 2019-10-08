@@ -1041,9 +1041,9 @@
                     <div class="modal-content container py-4 py-sm-5">
                         <div class="modal-header text-center row">
                             <h5 class="modal-title col" id="bookTicket">Забронировать билет</h5>
-                            <!-- <button type="button" class="close col-1" data-dismiss="modal" aria-label="Close">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
-                            </button> -->
+                            </button>
                         </div>
                         <div class="modal-body p-4 p-sm-5">
                             <form id="modalForm" class="text-center" action="">

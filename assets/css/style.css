@@ -2339,3 +2339,10 @@ display: none;    bottom: -150px;
 .right-footer-block-content:hover {
   background-image: none;
 }
+
+
+.close {
+  position: absolute;
+  top: 40px;
+  right: 20px;
+}
