@@ -1313,7 +1313,8 @@ z-index: -1;
 /* discounts */
 .discounts {
   position: relative;
-  margin: 120px 0;
+  margin-top: 120px;
+  margin-bottom: 60px;
 }
 
 .discounts_afterword {
